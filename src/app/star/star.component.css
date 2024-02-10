@@ -1,0 +1,9 @@
+.lines .line {
+  height: 0.25rem;
+  width: 5rem;
+  background-color: white;
+}
+
+.lines {
+  color: inherit;
+}

@@ -1,0 +1,43 @@
+<div id="gallery" #gallery (click)="displayNone()" class="gallery d-none position-fixed">
+  <img id="imgGallery" [src]=" galleryImgSrc " class=" position-fixed top-50 start-50 translate-middle" alt="">
+</div>
+<section style="padding-top: 92px; min-height: calc(-112px + 100vh);" class="">
+  <div class="text-center mt-4">
+    <h2>PORTFOLIO COMPONENT</h2>
+    <div class="lines d-flex justify-content-center align-items-center">
+      <div class="line one">
+
+      </div>
+      <i class="fa-solid fa-star mx-3"></i>
+      <div class="line two">
+
+      </div>
+    </div>
+  </div>
+  <div class="container pt-5">
+    <div class="row py-2 g-3">
+      <div class="col-md-4" *ngFor="let imgSrc of [imgSrcOne, imgSrcTwo, imgSrcThree]">
+        <div class="">
+          <div (click)=" clicked(imgSrc) " class="card overflow-hidden hstack small rounded-3">
+            <img class="w-100" [src]=" imgSrc " alt="">
+            <div class="layer d-flex justify-content-center align-items-center">
+              <i class="text-white fa-solid fa-plus fa-6x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row py-2 g-3">
+      <div class="col-md-4" *ngFor="let imgSrc of [imgSrcOne, imgSrcTwo, imgSrcThree]">
+        <div class="">
+          <div (click)=" clicked(imgSrc) " class="card overflow-hidden hstack small rounded-3">
+            <img class="w-100" [src]=" imgSrc " alt="">
+            <div class="layer d-flex justify-content-center align-items-center">
+              <i class="text-white fa-solid fa-plus fa-6x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

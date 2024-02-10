@@ -1,0 +1,60 @@
+<section style="padding-top: 92px; min-height: calc(-112px + 100vh);">
+  <div class="conatiner">
+    <div class="text-center mt-4">
+      <h2>PORTFOLIO COMPONENT</h2>
+      <div class="lines d-flex justify-content-center align-items-center">
+        <div class="line one">
+
+        </div>
+        <i class="fa-solid fa-star mx-3"></i>
+        <div class="line two">
+
+        </div>
+      </div>
+    </div>
+    <div class="row w-75 m-auto pt-5">
+      <div class="rowContent ms-2">
+        <div
+          class="inputsContainer p-lg-5 d-flex flex-column justify-content-center align-items-center position-relative">
+          <div class="inputParent  d-flex justify-content-center w-100 flex-column mb-5 position-relative">
+            <input type="text" [placeholder]="userName" [(ngModel)]=" searchName "
+              class="rounded-2 border-dark-subtle px-3 border-start-0 border-top-0 z-3 border-end-0 pb-3 form-control" />
+
+            <div [class.slide]=" searchName !== '' " class="slideEle position-absolute" *ngIf="userName">
+              <p> {{ userName }} </p>
+            </div>
+          </div>
+
+          <div class="inputParent  d-flex justify-content-center w-100 flex-column mb-5 position-relative">
+            <input type="text" [placeholder]="userAge" [(ngModel)]=" searchAge "
+              class="rounded-2 border-dark-subtle px-3 border-start-0 align-self-center border-top-0 z-3 border-end-0 pb-3 form-control" />
+            <div [class.slide]=" searchAge !== '' " class="slideEle position-absolute">
+              <p> {{ userAge }} </p>
+            </div>
+          </div>
+
+          <div class="inputParent  d-flex justify-content-center w-100 flex-column mb-5 position-relative">
+            <input type="email" [placeholder]="userEmail" [(ngModel)]=" searchEmail "
+              class="rounded-2 border-dark-subtle px-3 border-start-0 border-top-0 z-3 border-end-0 pb-3  form-control" />
+            <div [class.slide]=" searchEmail !== '' " class="slideEle position-absolute">
+              <p> {{ userEmail }} </p>
+            </div>
+          </div>
+
+          <div class="inputParent  d-flex justify-content-center w-100 flex-column mb-5 position-relative">
+            <input type="password" [placeholder]="userPassword" [(ngModel)]=" searchPassword "
+              class="rounded-2 border-dark-subtle px-3 border-start-0 border-top-0 z-3 border-end-0 pb-3 form-control" />
+            <div [class.slide]=" searchPassword !== '' " class="slideEle position-absolute">
+              <p> {{ userPassword }} </p>
+            </div>
+          </div>
+
+          <div class="btnParent">
+            <button class="btn text-white">send Message</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

@@ -25,22 +25,27 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/@fortawesome/fontawesome-free/js/all.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "5mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "5mb",
+                  "maximumError": "5mb"
                 }
               ],
               "outputHashing": "all"
@@ -94,5 +99,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "504c506d-0fda-4419-bec3-d4d4176c7c51"
   }
 }
